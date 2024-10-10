@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(31, 131, 131);
+}
+
+
+
+
+header {
+    background-color: rgb(35, 218, 157);
+    color: brown;
+    padding: 1rem 2rem;
+    /* top and bottom, left and right  */
+    /* 1rem = 16px */
+    margin: 1rem;
+}
+
+h1, h2, h3 {
+    text-decoration: underline;
+}
+
+
+div p {
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: blueviolet;
+}
+
+/* p {
+    color: blue;
+} */
+
+.notes {
+    border: 2px solid black;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#goals {
+   font-weight: 700; 
+}
+
+
+a {
+    display: block;
+    color: rgb(232, 104, 13);
+}
+
+a:link {
+    color: rgb(48, 17, 149);
+}
+a:visited {
+    color: rgb(255, 0, 43);
+}
