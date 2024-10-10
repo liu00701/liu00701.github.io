@@ -25,6 +25,7 @@ header, footer {
 
 .link-navigation {
     text-decoration: none;
+    color: #41521f;
     background-color: #AFCD9C;
     border: 1px solid #41521f;
 }
