@@ -1,0 +1,234 @@
+
+<div class="body">
+
+  <div class="id">#{{id}}</div>
+
+
+  <div class="progress" [ngStyle]="{width: progress + '%' }"></div>
+
+  <div class="contents" style="background: #1d4f65" *ngIf="id==1">
+    <img src="assets/loom.png" style="width: 30%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15% 0 0 -15%;">
+  </div>
+
+  <div class="contents"
+       style="background-image: url('assets/2016-11-21-roman-drits-barnimages-010.jpg'); background-size: cover"
+       *ngIf="id==2">
+
+  </div>
+
+  <div class="contents" style="background: #1d4f65" *ngIf="id==3">
+    <img src="assets/sync.png" style="width: 20%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10% 0 0 -30%;">
+
+
+  </div>
+  <div class="contents" style="background: #1d4f65" *ngIf="id==4">
+
+    <img src="assets/async.png" style="width: 20%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10% 0 0 10%;">
+
+  </div>
+
+  <div class="contents" style="background-image: url('assets/manhuntuna.0.jpg'); background-size: cover" *ngIf="id==5">
+    <div class="meme " style="position: absolute;
+    width: 40%;
+    bottom: 80%;
+    left: 5%;
+    top: 30%;">
+      Eat your cake
+      and have it
+    </div>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==6">
+
+    <section style="display: flex; flex-direction: row; height: 100%; width: 100%;">
+      <div class="article" style="width: 50%; float: left; padding-left: 0%; padding-top: 5%;text-align: center">
+        <h1 style="color: gray">Project Loom</h1>
+        <div style="line-height: 2em;">
+          <div style="list-style: none; margin: 1em;">Delimited continuations</div>
+          <div style="list-style: none; margin: 1em;">Fibers (lightweight user-mode threads)</div>
+          <div style="list-style: none; margin: 1em;">Tail-call elimination</div>
+        </div>
+      </div>
+      <div style="width: 50%; float: left; background-image: url('assets/61yQBy7lDlL._UL1001_.jpg');
+
+      background-repeat:   no-repeat;
+      background-position: center center;   ">
+        <div class="meme" style="margin-top: 20%">
+          Make Concurrency
+          Simple Again
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <div class="contents" style="background:white" *ngIf="id==7">
+    <div class="article abs">
+      <h1>What is a continuation?</h1>
+      <p><b>Continuation</b> (<i>delimited continuation</i>) is a program object representing a computation that may be suspended or resumed.</p>
+      <p>Implemented in JVM.</p>
+      <p>Implemented as a lower level construct.</p>
+    </div>
+  </div>
+
+
+  <div class="contents" style="background-color: #333" *ngIf="id==8">
+    <div style="text-align: left;font-size: 2rem; margin: 5% 5% 0 5%">
+      <div [innerHTML]="code1 | safeHtml"></div>
+    </div>
+    <div style="text-align: left;font-size: 2rem; margin: 2% 5% 0 5%">
+      <div [innerHTML]="code1out | safeHtml"></div>
+    </div>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==9">
+    <div class="article abs">
+      <h1 >Continuations:</h1>
+      <ul style="line-height: 1.5em;">
+        <li>Nested continuations</li>
+        <li>StackWalker</li>
+        <li>Forced preemption</li>
+        <li style="color: #aaa">Higher level continuations</li>
+        <li style="color: #aaa">Cloning</li>
+        <li style="color: #aaa">Serialization</li>
+        <li style="color: #aaa">Native monitors</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==10">
+    <div class="article abs">
+      <h1 >Current limitations</h1>
+      <ul style="line-height: 2em;">
+        <li>cannot yield with native frames on continuation stack</li>
+        <li>cannot yield while holding monitor</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="contents" style="background:white" *ngIf="id==11">
+    <div class="article abs">
+      <h1 >What is a fiber?</h1>
+      <p>Fiber is a <i>light-weight</i> (or <i>user-mode</i>) thread that is scheduled by the Java virtual machine, not
+        by the operating system (kernel).</p>
+      <p>Fibers are intended to be very small footprint, so that we should be able to have millions of them with
+        negligible task-switching overhead.</p>
+    </div>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==12">
+    <div class="article abs">
+      <h1 >What is a fiber?</h1>
+      <p>Fiber = continuation + scheduler</p>
+    </div>
+  </div>
+
+
+  <div class="contents" style="background-color: #333" *ngIf="id==13">
+    <div style="text-align: left;font-size: 2rem; margin: 5% 5% 0 5%">
+      <div [innerHTML]="code2 | safeHtml"></div>
+    </div>
+  </div>
+
+
+
+  <div class="contents" style="background:white" *ngIf="id==14">
+    <div class="article abs">
+      <h1>Fibers vs Threads</h1>
+
+    </div>
+  </div>
+
+  <div class="contents" style="background:url('/assets/45LROJYB4F.jpg'); background-size: cover;" *ngIf="id==15">
+      <h1 class="meme">Structured concurrency</h1>
+  </div>
+
+  <div class="contents" style="background:url('/assets/basic.png'); background-size: cover;" *ngIf="id==16">
+    <div class="article abs">
+      <img src="/assets/flow-matic-4.svg" style="position: absolute; right: 10%; width:30%">
+      <h1 class="meme" style="position: absolute; bottom: 10%;     left: 0;
+    width: 100%;
+    text-align: center;
+}"><div style="font-size: 5rem;">"Go To Statement Considered Harmful"</div><div style="font-size: 40%; color: #aaa">(Edsger Dijkstra, 1968)</div></h1>
+    </div>
+  </div>
+
+
+  <div class="contents" style="background:white" *ngIf="id==17">
+    <div class="article abs">
+      <h1>Structured programming</h1>
+      <img src="/assets/sequential-and-go-to-schematic.svg" width="30%">
+      <span style="margin: 0 5rem">=></span>
+      <img src="/assets/control-schematics.svg" width="30%" >
+      <h1>Structured concurrency</h1>
+      <img src="/assets/go-schematic-unlabeled.svg" width="30%">
+      <span style="margin: 0 5rem">=></span>
+      <img src="/assets/nursery-schematic-unlabeled.svg" width="15%" >
+    </div>
+  </div>
+
+  <div class="contents" style="background:url('/assets/pexels-photo-355175.jpeg'); background-size: cover;" *ngIf="id==18">
+    <div class="article abs">
+      <h1 class="meme">Rethink of threads</h1>
+    </div>
+  </div>
+
+
+  <div class="contents" style="background:url('/assets/barnimages_bucharest_01-770x513.jpg'); background-size: cover;" *ngIf="id==19">
+    <div class="article abs">
+      <h1 class="meme">Tail calls</h1>
+
+      <pre style="margin-left: 50%; color: white; background: black; padding: 0">
+
+ function foo(data) &#123;
+    .
+    .
+    .
+    return bar(data);
+ &#125;
+      </pre>
+    </div>
+  </div>
+
+
+<!--  <div class="contents" style="" *ngIf="id==19">-->
+<!--    <div class="article abs">-->
+<!--      <h1 class >Status</h1>-->
+
+<!--    </div>-->
+<!--  </div>-->
+  <div class="contents" style="background:white" *ngIf="id==20">
+    <div class="article abs">
+      <h1 >When?</h1>
+    </div>
+  </div>
+
+  <div class="contents" style="background: #1d4f65" *ngIf="id==20">
+    <img src="assets/loom.png" style="width: 30%;  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15% 0 0 -15%;">
+    <div class="article abs" style="color: white">
+      <ul style="line-height: 2em;">
+        <li>"nitka"</li>
+        <li>"włókno"</li>
+        <li>"pasmo"</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="contents" style="background-color: #333" *ngIf="id>20"></div>
+</div>
