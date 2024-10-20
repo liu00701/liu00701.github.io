@@ -1,0 +1,88 @@
+html {
+    font-size: 20px;
+}
+ /* 1rem = 16px; */
+ /* em */
+
+ body {
+    background-color: #f4f4f4;
+    color:#333;
+    line-height: 1.5;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: regular;
+ }
+.container {
+    /* max-width: 90%; */
+    max-width: 90vw;
+    /* vh */
+    margin: 0 auto;
+}
+
+
+header {
+    /* background-color: #333; */
+    color:#FFF;
+    padding: 10rem 0;
+    text-align: center;
+    /* background-image: url('../images/bread.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background: #333 url("../images/bread.jpg") no-repeat center center/cover;
+}
+h1 {
+    font-size: 2rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0.7rem 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+nav ul li a {
+    color: #FFF;
+}
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* #breakfast { */
+    /* max-width: 90%; */
+    /* max-width: 90vw; */
+/* } */
+
+section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+aside {
+    background-color: rgb(75, 141, 97);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color:#f4f4f4;
+    padding: 0.8rem 0;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
