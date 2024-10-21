@@ -1,0 +1,133 @@
+.container {
+    max-width: 80vw; /* 80% of the viewport's total width */
+    margin: 0 auto;  /* the top and bottom margins are set to 0 */
+}
+
+body {
+    margin: 0 0;
+    background-color: rgb(178, 211, 207);
+    line-height: 1.5;
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+main {
+    background-color: rgb(216, 233, 231);
+}
+
+/* set header */
+header {
+    color:#FFF;
+    padding: 9rem 0 1rem 0; 
+    text-align: center;
+    background-image: url('../images/lone-starfish-wide.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+/* set navigation */
+.link-navigation ul {
+    margin-top: 0;
+    padding: 5px 0px 0px 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-navigation ul li {
+    font-size: 1.5rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.link-navigation ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* set image and p */
+.lone-startfish-img {
+    float: left;
+    margin: 5px 15px 15px 5px;          
+    max-width: 200px;
+}
+
+#home p {
+    text-align: justify;
+    padding-right: 0px;
+    text-align: left;
+    margin-left: 5px;
+}   
+
+/* set story */
+#story ul{
+    padding-left: 20px;
+}
+
+#story ul li {
+    line-height: 1;
+}
+
+/* set form */
+.form-container {
+    padding: 10px;
+    margin: 0px 5px;
+    border: 1px solid #333;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 99%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    margin: 10px 0px 0px 0px;
+    display: block;
+}
+
+.form-container p {
+    margin: 10px auto;
+}
+
+/* set button */
+button {
+    margin: 10px 0px;
+    display: block;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: rgb(216, 233, 231); 
+    font-family: inherit;
+    font-size: 0.8rem;
+}
+
+/* set footer */
+footer {
+    margin: 0 0;
+    text-align: right;
+    background-color: rgb(216, 233, 231);
+}
+
+footer p {
+    padding: 20px 20px 20px 0px;
+    margin: 0 0;
+}
