@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after {
+    box-sizing: inherit;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid yellow;
+}
+
+
+
+/*
+Set Width and Border
+*/
+.container {
+    width: 400px;
+    border: 2px solid #1e9a50;
+    margin: 30px;
+}
+
+/*
+  Add some space between the border;
+  */
+figure {
+    margin: 10px;
+}
+
+/*
+  Give the caption a distinct style.
+  */
+figcaption {
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    background: #111;
+    color: #fff;
+}
+
+/* 
+  Responsive Image
+  The image will scale with the size of it's container
+  */
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.test-float {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.box1 {
+    width: 25%;
+    height: 100px;
+    float: left;
+}
+
+.purple {
+    background: purple;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.orange {
+    background: orange;
+}
