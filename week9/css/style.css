@@ -22,3 +22,9 @@ main {
         background-color: yellowgreen;
     }
 }
+
+@media screen and (min-width: 900px) {
+    main {
+        background-color: purple;
+    }
+}
