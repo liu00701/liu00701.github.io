@@ -1,15 +1,13 @@
-.container {
-    max-width: 80vw; /* 80% of the viewport's total width */
-    margin: 0 auto;  /* the top and bottom margins are set to 0 */
-}
-
 body {
-    margin: 0 0;
+    /* Set the width to 80% of the screen */
+    max-width: 80vw;
+    /* Automatically center the body */
+    margin: 0 auto;
     background-color: rgb(178, 211, 207);
     line-height: 1.5;
-    color:#333;
+    color: #333;
     font-family: Arial, Helvetica, sans-serif;
- }
+}
 
 main {
     background-color: rgb(216, 233, 231);
@@ -17,8 +15,8 @@ main {
 
 /* set header */
 header {
-    color:#FFF;
-    padding: 9rem 0 1rem 0; 
+    color: #FFF;
+    padding: 9rem 0 1rem 0;
     text-align: center;
     background-image: url('../images/lone-starfish-wide.jpg');
     background-repeat: no-repeat;
@@ -37,42 +35,49 @@ h2 {
 }
 
 /* set navigation */
-.link-navigation ul {
+nav ul {
     margin-top: 0;
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px 10px 0px;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.link-navigation ul li {
+nav ul li {
     font-size: 1.5rem;
-    position: relative;
     margin: 0 auto;
 }
 
-
-.link-navigation ul li a {
+nav ul li a {
     color: #000;
     text-decoration: none;
 }
 
+/* 
+nav ul li:not(:last-child)::after {
+    content: "|";
+    margin: 0 100px;
+} */
+
 /* set image and p */
-.lone-startfish-img {
+.lone-starfish-img {
     float: left;
-    margin: 5px 15px 15px 5px;          
+    margin: 5px 15px 5px 5px;
     max-width: 200px;
 }
 
 #home p {
-    text-align: justify;
-    /* padding-right: 0px; */
     text-align: left;
-    margin: 8px 5px;
-}   
+    margin: 8px 8px;
+}
+
+.clear {
+    clear: both;
+}
 
 /* set story */
-#story ul{
+#story ul {
+    /* margin: 10px auto; */
     padding-left: 20px;
 }
 
@@ -87,10 +92,13 @@ h2 {
     border: 1px solid #333;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
+    /* It ensures your inputs and textarea expand nearly fully 
+    across the form width while leaving a slight margin to avoid layout issues */
     width: 99%;
     border: 1px solid #ccc;
-    box-sizing: border-box;
     margin-bottom: 5px;
     padding: 2px;
 }
@@ -101,7 +109,6 @@ textarea {
 
 label {
     margin: 10px 0px 0px 0px;
-    display: block;
 }
 
 .form-container p {
@@ -115,7 +122,7 @@ button {
     padding: 10px 10px;
     cursor: pointer;
     border: 1px solid #333;
-    background-color: rgb(216, 233, 231); 
+    background-color: rgb(216, 233, 231);
     font-family: inherit;
     font-size: 0.8rem;
 }
